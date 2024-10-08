@@ -1,0 +1,15 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel displace
+
+Texture2D<float4> _HeightMap;
+Sampler_state sampler_HeightMap;
+RWStructuredBuffer<float3> Vertices;
+StructuredBuffer<float2> UVs;
+
+[numthreads(128,1,1)]
+void displace (uint3 id : SV_DispatchThreadID)
+{
+    
+    
+
+}
